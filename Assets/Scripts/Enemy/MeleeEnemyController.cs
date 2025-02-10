@@ -42,7 +42,7 @@ public class MeleeEnemyController : MonoBehaviour
     void Attack()
     {
         Debug.Log("Melee enemy attacking player!");
-        // player.GetComponent<PlayerHealth>().TakeDamage(damage);
+        player.GetComponent<PlayerHealth>().TakeDamage(damage);
 
         StartCoroutine(AttackCooldownRoutine());
     }
